@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-security-jwt
+
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/spring_security_jwt
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 9876
+
+jwt:
+  public:
+    key: classpath:app.pub
+
+  private:
+    key: classpath:app.key
